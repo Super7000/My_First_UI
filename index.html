@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First UI</title>
+  	<link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+	<script type="text/javascript">
+		var song = new Audio();
+		song.src = "Way Back Home.mp3";
+	</script>
+</head>
+
+<body>
+	<div class="screen">
+		<div class="sound">
+			<img class="sound-img" src="Icons/arrow.png">
+		</div>
+		<p class="pn">PLAYING NOW</p>
+		<div class="menu">
+			<img class="menu-img" src="Icons/list.png">
+		</div>
+		<div class="dish"></div>
+		<b>
+			<div class="song-name">Way Back Home</div>
+		</b>
+		<div class="artist">Unknown</div>
+		<div class="prev">
+			<img src="Icons/fast-backward.svg" class="prev-img">
+		</div>
+		<div class="progress"></div>
+		<input type="radio" name="play-pause" class="play-pause1" onclick="song.pause()">
+		<input type="radio" name="play-pause" class="play-pause2" onclick="song.play()">
+		<div class="play">
+			<img src="Icons/play.svg" class="play-img">
+		</div>
+		<div class="pause">
+			<img src="Icons/pause.svg" class="pause-img">
+		</div>
+		<div class="next">
+			<img src="Icons/fast-forward.svg" class="next-img">
+		</div>
+	</div>
+</body>
+
+</html>
